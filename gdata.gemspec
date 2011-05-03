@@ -9,11 +9,11 @@ Gem::Specification.new do |s|
   s.version = '1.1.1'
   s.requirements << 'none'
   s.require_path = 'lib'
-  #s.test_files = FileList['test/ts_gdata.rb']
+  s.test_files = Dir['test/ts_gdata.rb']
   s.has_rdoc = true
   s.extra_rdoc_files = ['README', 'LICENSE']
   s.rdoc_options << '--main' << 'README'
-  s.files = FileList.new('[A-Z]*', 'lib/**/*.rb', 'test/**/*') do |fl|
+  s.files = Dir.new('[A-Z]*', 'lib/**/*.rb', 'test/**/*') do |fl|
     fl.exclude(/test_config\.yml$/)
   end
   s.description = <<EOF

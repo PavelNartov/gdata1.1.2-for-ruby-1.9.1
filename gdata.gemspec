@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version = '1.1.1'
   s.requirements << 'none'
   s.require_path = 'lib'
-  s.test_files = FileList['test/ts_gdata.rb']
+  #s.test_files = FileList['test/ts_gdata.rb']
   s.has_rdoc = true
   s.extra_rdoc_files = ['README', 'LICENSE']
   s.rdoc_options << '--main' << 'README'
